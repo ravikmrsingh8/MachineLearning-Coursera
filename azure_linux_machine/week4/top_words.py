@@ -1,6 +1,7 @@
 import turicreate as tc
 
-# get csv from https://d396qusza40orc.cloudfront.net/phoenixassets/people_wiki.csv
+
+# Get csv from https://d396qusza40orc.cloudfront.net/phoenixassets/people_wiki.csv
 def top_words():
     peoples = tc.SFrame("people_wiki.csv")
     peoples['word_count'] = tc.text_analytics.count_words(peoples['text'])
