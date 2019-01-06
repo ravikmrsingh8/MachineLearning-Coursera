@@ -1,2 +1,4 @@
+*.csv
+*.gl/
 .idea/
 .vscode/
